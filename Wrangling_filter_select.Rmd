@@ -261,7 +261,7 @@ Harry Potter and the Sorcerer's Stone
 
 ```{r}
 movies_comedies_animation_100 <- movies %>%
-    filter(Comedy == 1 | Animation == 1 & votes >= 100)
+    filter(Comedy == 1 | Animation == 19 & votes >= 100)
 
 movies_comedies_animation_100 %>%
   arrange(desc(budget))
@@ -273,13 +273,11 @@ movies_comedies_animation_100 %>%
 
 ```{r}
 movies %>%
-  filter(str_detect(title, "Kiki's"))
+  filter(str_detect(title, "silent voice"))
 ```
 
 No it was not, my favorite movie in Silent voice 
 
 You could answer questions like what is the highest budget film in each genre,
-
-
 
 
